@@ -1,0 +1,42 @@
+{
+  "name": "twilight-cosmos-theme",
+  "displayName": "Twilight Cosmos",
+  "description": "A dark theme inspired by Twilight with cosmic colors",
+  "version": "1.0.3",
+  "publisher": "zellwk",
+  "type": "module",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark theme",
+    "twilight",
+    "cosmos",
+    "color-theme",
+    "dark",
+    "purple",
+    "blue"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Twilight Cosmos",
+        "uiTheme": "vs-dark",
+        "path": "./themes/twilight-cosmos-custom.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "npx vsce package",
+    "build": "node build-theme.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zellwk/twilight-cosmos-theme"
+  },
+  "license": "MIT"
+}
