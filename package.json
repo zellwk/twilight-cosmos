@@ -2,9 +2,28 @@
   "name": "twilight-cosmos-theme",
   "displayName": "Twilight Cosmos",
   "description": "A dark theme inspired by Twilight with cosmic colors",
-  "version": "1.0.3",
+  "version": "1.0.12",
   "publisher": "zellwk",
+  "icon": "assets/icon2.png",
   "type": "module",
+  "exports": {
+    ".": "./themes/twilight-cosmos-custom.json",
+    "./js": "./src/twilight-cosmos-theme.js"
+  },
+  "scripts": {
+    "package": "npx vsce package",
+    "build": "node build-theme.js",
+    "publish:vscode": "npx dotenv-cli -e .env -- npx vsce publish",
+    "publish:openvsx": "npx dotenv-cli -e .env -- npx ovsx publish",
+    "publish:npm": "npm publish"
+  },
+  "files": [
+    "src",
+    "themes",
+    "README.md",
+    "LICENSE",
+    "assets"
+  ],
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -19,7 +38,8 @@
     "color-theme",
     "dark",
     "purple",
-    "blue"
+    "blue",
+    "vscode-theme"
   ],
   "contributes": {
     "themes": [
@@ -30,13 +50,9 @@
       }
     ]
   },
-  "scripts": {
-    "package": "npx vsce package",
-    "build": "node build-theme.js"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zellwk/twilight-cosmos-theme"
+    "url": "https://github.com/zellwk/twilight-cosmos"
   },
   "license": "MIT"
 }

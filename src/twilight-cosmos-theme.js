@@ -27,7 +27,7 @@ const colors = {
   blue500: '#3e9eee',
   cyan500: '#00daf6',
   orange500: '#f7bd2b',
-  magenta: '#fca7ea',
+  magenta500: '#f08edb',
 
   // Orig colors
   blue: '#7cafff',
@@ -71,7 +71,7 @@ const palette = {
   // Syntax highlighting - Keywords and control
   keyword: colors.purple500,
   storage: colors.purple500,
-  storageModifier: colors.magenta,
+  storageModifier: colors.magenta500, // Async keyword
   operator: colors.purple500,
   punctuation: colors.purple300d,
   export: colors.cyan500,
@@ -84,12 +84,12 @@ const palette = {
   boolean: colors.orange, // To think about this
 
   // Syntax highlighting - Identifiers
-  parameter: colors.magenta, // Function arguments.
-  property: colors.blue500, // Property (before method) paleBlue. To think.
-  objectKey: colors.blue500, // Object key. teal. To think.
+  parameter: colors.foreground, // Function arguments.
+  property: colors.blue500, // Property (before method)
+  objectKey: colors.blue500, // Object key.
 
   // Syntax highlighting - Functions and types
-  function: colors.cyan500,
+  function: colors.cyan500, // Functions and methods
   functionBuiltin: colors.cyan500,
   class: colors.cyan500, // class keyword.
   support: colors.orange500, // JSdoc type.
@@ -111,12 +111,12 @@ const palette = {
   json1: colors.cyan500,
   json2: colors.purple500,
   json3: colors.orange500,
-  json4: colors.magenta,
+  json4: colors.magenta500,
   json5: colors.cyan500,
   json6: colors.purple500,
   json7: colors.orange500,
 
-  // Background variants
+  // Background for the interface
   interfaceBackground: colors.purple900d,
   interfaceBorders: colors.purple1000,
   dropdownBackground: colors.purple900d, // ?? To think
@@ -160,7 +160,7 @@ const palette = {
   cyan: colors.cyan500,
   green: colors.green500,
   yellow: colors.orange500,
-  magenta: colors.magenta,
+  magenta: colors.magenta500,
   red: colors.red500,
   blue: colors.blue500,
   lightBlue: colors.lightBlue,
@@ -170,7 +170,7 @@ const palette = {
   terminalBrightBlue: colors.blue,
   terminalBrightCyan: colors.cyan,
   terminalBrightGreen: colors.green,
-  terminalBrightMagenta: colors.magenta,
+  terminalBrightMagenta: colors.magenta500,
   terminalBrightRed: colors.red,
   terminalBrightWhite: colors.purple50,
   terminalBrightYellow: colors.yellow,
@@ -393,7 +393,7 @@ export default {
   },
   displayName: 'Twilight Cosmos',
   name: 'twilight-cosmos',
-  semanticHighlighting: false,
+  semanticHighlighting: true,
   // semanticTokenColors: {
   //   function: palette.blue,
   //   'method.declaration': palette.blue,
@@ -496,6 +496,7 @@ export default {
         fontStyle: 'italic',
       },
     },
+
     {
       name: 'Interpolation',
       scope: [
@@ -670,9 +671,13 @@ export default {
 
     {
       name: 'Object',
-      scope: ['variable.other.readwrite.js', 'variable.other.object'],
+      scope: [
+        'scope.js variable',
+        'variable.other.readwrite.js',
+        'variable.other.object',
+      ],
       settings: {
-        foreground: palette.object,
+        foreground: palette.foreground,
       },
     },
 
@@ -708,6 +713,7 @@ export default {
         foreground: palette.property,
       },
     },
+
     {
       name: 'Haskell Constants',
       scope: ['source.haskell constant.other.haskell'],
@@ -818,6 +824,7 @@ export default {
         fontStyle: 'italic',
       },
     },
+
     {
       name: 'entity.name.method.js',
       scope: ['entity.name.method.js'],

@@ -2,12 +2,12 @@
 
 A dark theme inspired by Twilight with cosmic colors.
 
-![Interface Preview](https://raw.githubusercontent.com/zellwk/twilight-cosmos-theme/master/assets/ui.png)
+![Interface Preview](https://raw.githubusercontent.com/zellwk/twilight-cosmos/master/assets/ui.png)
 
 This works splendidly with HTML, CSS, JavaScript, and frameworks built upon these languages like Tailwind, Astro, and Svelte
 
-![HTML, CSS, and JavaScript Preview](https://raw.githubusercontent.com/zellwk/twilight-cosmos-theme/master/assets/html-css-js.png)
-![Astro, and Svelte Preview](https://raw.githubusercontent.com/zellwk/twilight-cosmos-theme/master/assets/astro-svelte.png)
+![HTML, CSS, and JavaScript Preview](https://raw.githubusercontent.com/zellwk/twilight-cosmos/master/assets/html-css-js.png)
+![Astro, and Svelte Preview](https://raw.githubusercontent.com/zellwk/twilight-cosmos/master/assets/astro-svelte.png)
 
 ## Installation
 

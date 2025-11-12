@@ -188,13 +188,13 @@
     "terminal.ansiBrightBlue": "#7cafff",
     "terminal.ansiBrightCyan": "#78dbff",
     "terminal.ansiBrightGreen": "#c3e88d",
-    "terminal.ansiBrightMagenta": "#fca7ea",
+    "terminal.ansiBrightMagenta": "#f08edb",
     "terminal.ansiBrightRed": "#ff757f",
     "terminal.ansiBrightWhite": "#e5e7f2",
     "terminal.ansiBrightYellow": "#ffc777",
     "terminal.ansiCyan": "#00daf6",
     "terminal.ansiGreen": "#66e9a5",
-    "terminal.ansiMagenta": "#fca7ea",
+    "terminal.ansiMagenta": "#f08edb",
     "terminal.ansiRed": "#fa5858",
     "terminal.ansiWhite": "#e5e7f2",
     "terminal.ansiYellow": "#f7bd2b",
@@ -315,7 +315,7 @@
         "storage.modifier"
       ],
       "settings": {
-        "foreground": "#fca7ea",
+        "foreground": "#f08edb",
         "fontStyle": "italic"
       }
     },
@@ -490,9 +490,7 @@
         "variable.parameter",
         "meta.function.parameter variable"
       ],
-      "settings": {
-        "foreground": "#fca7ea"
-      }
+      "settings": {}
     },
     {
       "name": "String, Symbols, Inherited Class, Markup Heading",
@@ -514,6 +512,7 @@
     {
       "name": "Object",
       "scope": [
+        "scope.js variable",
         "variable.other.readwrite.js",
         "variable.other.object"
       ],
@@ -769,9 +768,7 @@
       "scope": [
         "support.constant.property-value"
       ],
-      "settings": {
-        "foreground": "#fca7ea"
-      }
+      "settings": {}
     },
     {
       "name": "Inserted",
@@ -929,7 +926,7 @@
         "source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
       ],
       "settings": {
-        "foreground": "#fca7ea"
+        "foreground": "#f08edb"
       }
     },
     {
@@ -1238,5 +1235,5 @@
       }
     }
   ],
-  "semanticHighlighting": false
+  "semanticHighlighting": true
 }
